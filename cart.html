@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="Basics">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jackets.html">Jackets</a></li>
+            <li><a href="pants.html">Pants</a></li>
+            <li><a href="hoodies.html">Hoodies</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="skarf.html">Scarf</a></li>
+            <li><a href="beauty.html">Beauty</a></li>
+            <li><a href="jewelry.html">Jewelry</a></li>
+            <li><a href="cart.html" class="current-page">Cart</a></li>
+
+        </ul>
+    </nav>
+
+    <a href="cart.html" class="cart-badge">
+        🛒 <span class="count" id="cart-count">0</span>
+        <span class="total">$<span id="cart-total">0</span></span>
+    </a>
+</header>
+
+<main class="Main">
+    
+    <div class="cart-wrapper">
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Size</th>
+                    <th>Color</th>
+                    <th>Price ($)</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div id="cart-summary">
+            <p>Shipping: $<span id="shipping-cost">0.00</span></p>
+            <h3>Grand Total: $<span id="cart-grand-total">0.00</span></h3>
+            <p id="free-shipping-message"
+               style="color: green; font-weight: bold;"></p>
+        </div>
+
+        <p id="empty-cart-msg"
+           style="display:none; font-weight:bold; margin-top:15px;">
+           Your cart is empty 🛒
+        </p>
+
+        <button id="clear-cart" class="add-to-cart">
+            Clear Cart
+        </button>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2025 Wintera Store</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

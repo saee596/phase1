@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wintera Store - Winter Collection</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="Basics">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="current-page">Home</a></li>
+                <li><a href="jackets.html">Jackets</a></li>
+                <li><a href="pants.html">Pants</a></li>
+                <li><a href="hoodies.html">Hoodies</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="skarf.html">Scarf</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="jewelry.html">Jewelry</a></li>
+                <li><a href="cart.html">Cart</a></li>
+
+            </ul>
+        </nav>
+
+        <a href="cart.html" class="cart-badge">
+            <span class="text">Cart</span>
+            <span class="count" id="cart-count">0</span>
+            <span class="total">$<span id="cart-total">0</span></span>
+        </a>
+    </header>
+
+    <main>
+
+        <section class="Main">
+            <h1>Where Elegance Meets You</h1>
+            <h3>Elegance Is Our Signature</h3>
+            <p>Shop High Class Winter Coats, Pants, Hoodies, Sweatshirts and Shoes.</p>
+            <p>Beauty Products and Jewelry are coming.. Stay Tuned!</p>
+
+            <a href="#products" class="button">Shop Collection</a>
+        </section>
+
+        <section class="images">
+            <article>
+                <img src="img/Jackets.jpg" alt="Trench Coat">
+                <h2>Jackets</h2>
+                <a href="jackets.html" class="button">Shop Now</a>
+            </article>
+
+            <article>
+                <img src="img/pants.jpg" alt="Pants">
+                <h2>Pants</h2>
+                <a href="pants.html" class="button">Shop Now</a>
+            </article>
+
+            <article>
+                <img src="img/hoodies.jpg" alt="hoodie">
+                <h2>Hoodies</h2>
+                <a href="hoodies.html" class="button">Shop Now</a>
+            </article>
+
+            <article>
+                <img src="img/Shoes.jpg" alt="Shoes">
+                <h2>Shoes</h2>
+                <a href="shoes.html" class="button">Shop Now</a>
+            </article>
+
+            <article>
+                <img src="img/scarf..png" alt="Scarf">
+                <h2>Scarf</h2>
+                <a href="skarf.html" class="button">Shop Now</a>
+            </article>
+
+            <article>
+                <img src="img/beauty.png" alt="Beauty">
+                <h2>Beauty</h2>
+                <a href="beauty.html" class="button">Coming Soon</a>
+            </article>
+
+            <article>
+                <img src="img/Jewerly.jpg" alt="jewelry">
+                <h2>Jewelry</h2>
+                <a href="jewelry.html" class="button">Coming Soon</a>
+            </article>
+        </section>
+
+       
+
+        <section class="products-section" id="products">
+            <h2>Our Products</h2>
+            <p class="products-subtitle">Browse a selection of our winter essentials.</p>
+
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Search by name">
+
+                <select id="categoryFilter">
+                    <option value="all">All categories</option>
+                    <option value="jackets">Jackets</option>
+                    <option value="hoodies">Hoodies</option>
+                    <option value="pants">Pants</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="scarf">Scarf</option>
+                </select>
+
+                <select id="brandFilter">
+                    <option value="all">All brands</option>
+                    <option value="Essentials">Essentials</option>
+                    <option value="CozyWear">CozyWear</option>
+                </select>
+
+                <input type="number" id="maxPrice" placeholder="Search by price" min="0">
+            </div>
+
+            <div class="products-grid" id="products-container"></div>
+        </section>
+
+
+
+        <section class="final">
+            <h3>Join Our Family For Special Treatment!</h3>
+            <p>Sign up for our newsletter and be the first to hear about new arrivals and exclusive offers.</p>
+
+            <form method="get" class="newsletter-form" id="newsletter-form">
+    <div class="form-group">
+        <label for="newsletter-email">Email</label>
+        <input
+            type="email"
+            id="newsletter-email"
+            required
+            placeholder="Enter your email">
+    </div>
+
+    <button type="submit">Subscribe</button>
+
+    <p id="newsletter-message" style="color: green; margin-top: 10px;"></p>
+</form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025  Wintera Store</p>
+        <p>
+            FIND US ON:
+            <br>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+        </p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
